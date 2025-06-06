@@ -20,7 +20,6 @@
 
 1. 下载zip文件，到 `WordPress 后台 - 插件 - 添加插件`
 2. 启用插件画后，在左侧菜单找到「Friend Links」开始使用
-3. 如果需要实现 7 天内有更新的博客用光晕特殊标识，请下载 `friends_plugin_glow.1.0.zip`，否则下载 `friends_plugin.1.0.zip`
 
 ## 🚀 使用方法
 
@@ -47,7 +46,8 @@
 
 - **拖拽排序**：在管理页面直接拖拽调整友链显示顺序
 - **RSS 更新**：插件会定期检查 RSS 并更新最新文章信息
-- **数据导出**：点击「Export Links」按钮导出 CSV 格式的友链数据
+- **数据导出**：点击「Export Links」按钮导出 CSV 格式的友链数
+- **有更新的博客特殊标识**：勾选「Enable Glow Animation for Recent Posts」开关，选择是否为 7 天内有更新的博客添加光晕效果
 
 ## ⚙️ 系统要求
 
