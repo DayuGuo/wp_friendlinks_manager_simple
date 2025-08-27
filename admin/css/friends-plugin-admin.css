@@ -1,0 +1,199 @@
+/**
+ * All of the CSS for your admin-facing functionality should be
+ * included in this file.
+ */
+
+/* Modal Styles */
+.friends-modal {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-modal-content {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.friends-modal-header {
+    padding: 20px 20px 0 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friends-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.friends-modal-close {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.friends-modal-close:hover {
+    color: #333;
+}
+
+.friends-modal-body {
+    padding: 20px;
+}
+
+.friends-modal-footer {
+    padding: 0 20px 20px 20px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.friends-modal-footer .button {
+    margin-left: 10px;
+}
+
+/* Tab Styles */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Table Styles */
+#friends-links-table .column-actions {
+    width: 120px;
+}
+
+#friends-links-table .column-actions a {
+    text-decoration: none;
+}
+
+#friends-links-table .column-actions a:hover {
+    text-decoration: underline;
+}
+
+/* RSS Update Feedback */
+#rss-update-feedback {
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#rss-update-feedback.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+#rss-update-feedback.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+#friends-links-table tbody tr {
+    cursor: move;
+}
+
+#friends-links-table .column-actions a {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+#friends-links-table .column-actions .delete {
+    color: #a00;
+}
+
+#rss-update-feedback.success {
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+    margin-top:10px;
+}
+
+#rss-update-feedback.error {
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+     margin-top:10px;
+}
+
+/* Latest post column styling */
+.column-latest-post {
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.column-latest-post a {
+    color: #0073aa;
+    text-decoration: none;
+    display: block;
+    line-height: 1.4;
+}
+
+.column-latest-post a:hover {
+    color: #005177;
+    text-decoration: underline;
+}
+
+.column-latest-post small {
+    color: #666;
+    font-size: 11px;
+    margin-top: 2px;
+    display: block;
+}
+
+/* Responsive design for modal */
+@media (max-width: 600px) {
+    .friends-modal-content {
+        width: 95%;
+        margin: 5% auto;
+        padding: 15px;
+    }
+    
+    .friends-modal-header h3 {
+        font-size: 18px;
+    }
+    
+    .form-table th,
+    .form-table td {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+    
+    .form-table th {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    /* Hide latest post column on small screens */
+    .column-latest-post {
+        display: none;
+    }
+}
